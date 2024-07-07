@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f8ff;
+    color: #333;
+}
+#EPimg {
+    padding-right: 20px;
+
+}
+header {
+    background-color: rgb(46, 148, 46);
+    padding: 10px 0;
+    display: flex;
+    
+    align-items: center;
+    padding: 0 20px;
+}
+
+header img#logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #388e3c;
+    border-radius: 5px;
+}footer {
+    background-image: url(../img/Footer.jpg);
+    background-size: 165px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer .iconos {
+    margin-bottom: 10px;
+}
+
+footer .iconos p {
+    margin-bottom: 10px;
+}
+
+footer .listaiconos {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .listaiconos li a {
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+footer .listaiconos li a:hover {
+    transform: scale(1.2);
+}
+
+footer p {
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+/* animacion*/
+nav a, footer .listaiconos li a {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+nav a::before, footer .listaiconos li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: 1;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+}
+
+nav a:hover::before, footer .listaiconos li a:hover::before {
+    transform: translateX(0);
+}

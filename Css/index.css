@@ -10,13 +10,15 @@ body {
     background-color: #f0f8ff;
     color: #333;
 }
+#EPimg {
+    padding-right: 20px;
 
+}
 header {
-    background-image: url(../img/Floresnav.jpg) ;
-    background-size: 175px;
+    background-color: rgb(46, 148, 46);
     padding: 10px 0;
     display: flex;
-    justify-content: space-between;
+    
     align-items: center;
     padding: 0 20px;
 }
