@@ -75,6 +75,33 @@ nav a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+#QS1 {
+    background-color: green;
+    padding: 20px; /* Espacio interior para separar del borde */
+    display: flex; /* Para alinear elementos en fila */
+    justify-content: space-between; /* Para separar la imagen del texto */
+    align-items: center; /* Para centrar verticalmente */
+}
+
+#QS1 .content {
+    max-width: 50%; /* Limitar el ancho máximo del contenido */
+}
+
+#QS1 img {
+    margin-right: 20px; /* Margen derecho para separar la imagen del texto */
+    max-width: 800px; /* Limitar el ancho máximo al 100% del contenedor */
+    height: 500px; /* Ajustar la altura automáticamente según el ancho */    
+}
+
+#QS1 h1, #QS1 h2 {
+    color: white; /* Color del texto blanco */
+}
+#QS1 h1{
+    font-size: 50px;
+    padding-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 footer {
     background-image: url(../img/Footer.jpg);
     background-size: 165px;
