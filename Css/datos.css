@@ -43,7 +43,91 @@ nav a {
 nav a:hover {
     background-color: #388e3c;
     border-radius: 5px;
-}footer {
+
+}   
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7e0; /* Fondo relacionado con Eco Paradise */
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#datos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Distribución en columnas */
+    grid-gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.cuadro {
+    background-color: #ffffff;
+    border: 2px solid #4caf50;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.cuadro h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #4caf50;
+}
+
+.cuadro p {
+    font-size: 30px; /* Tamaño grande para el valor */
+    margin: 10px 0 0;
+    color: #333;
+}
+
+.reloj {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: auto;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #4caf50;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.reloj h3, .reloj p {
+    margin: 0;
+}
+
+.ledcrecimiento span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red; /* Comienza apagado */
+}
+
+.ledcrecimiento.prendido span {
+    background-color: green;
+}
+
+h2 {
+    color: #4caf50;
+    text-align: center;
+}
+
+footer {
     background-image: url(../img/Footer.jpg);
     background-size: 165px;
     color: white;

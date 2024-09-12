@@ -43,7 +43,126 @@ nav a {
 nav a:hover {
     background-color: #388e3c;
     border-radius: 5px;
-}footer {
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+h1 {
+    color: #2c6d2d;
+    text-align: center;
+    font-size: 50px;
+}
+h3 {
+    color: #2c6d2d;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 10px;
+}
+h2 {
+    color: #2c6d2d;
+}
+
+p {
+    line-height: 1.6;
+    color: #555;
+}
+
+#main-board, #water-level-sensor-board {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 70%; 
+    height: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carousel img {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.board-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.board-description, .board-images {
+    width: 48%;
+}
+
+.board-images img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pcb-design {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.pcb-design img {
+    width: 48%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.pcb-design h2, .pcb-design h3 {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+footer {
     background-image: url(../img/Footer.jpg);
     background-size: 165px;
     color: white;
@@ -52,6 +171,43 @@ nav a:hover {
     margin-top: 20px;
 }
 
+nav a, footer .listaiconos li a {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+nav a::before, footer .listaiconos li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: 1;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+}
+
+nav a:hover::before, footer .listaiconos li a:hover::before {
+    transform: translateX(0);
+}
+
+footer {
+    background-image: url(../img/Footer.jpg);
+    background-size: 165px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+#a1{
+    color: white;
+}
+#a2{
+    color: white;
+}
 footer .iconos {
     margin-bottom: 10px;
 }
@@ -79,28 +235,4 @@ footer .listaiconos li a:hover {
 footer p {
     font-size: 0.9em;
     margin-top: 20px;
-}
-
-/* animacion*/
-nav a, footer .listaiconos li a {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-}
-
-nav a::before, footer .listaiconos li a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.2);
-    z-index: 1;
-    transform: translateX(-100%);
-    transition: transform 0.5s ease;
-}
-
-nav a:hover::before, footer .listaiconos li a:hover::before {
-    transform: translateX(0);
-}
+}   

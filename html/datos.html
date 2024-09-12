@@ -17,36 +17,46 @@
             <ul id="listaNav">
                 <li><a href="../index.html">Pagina Principal</a></li>
                 <li><a href="informacion.html">Mas informacion</a></li>
-                <li><a href="datos.html">Datos de control</a></li>
+                <li><a href="datos.html">Consola</a></li>
             </ul>
         </nav>
     </div>
     </header>
     <main>
         <section id="datos">
-            <h2>Datos del Invernadero</h2>
-            <div class="sensor-data">
-                <h3>Temperatura</h3>
-                <p>Temperatura actual: <span id="temp">0</span></p>
+            <div class="cuadro estado">
+                <h3>Estado de Conexión ESP32</h3>
+                <p id="est32">No conectado</p>
             </div>
-            <div class="sensor-data">
+    
+            <div class="cuadro ledcrecimiento">
+                <h3>Luces de Crecimiento</h3>
+                <p id="estluces">Apagado</p>
+            </div>
+    
+            <div class="cuadro tanque">
+                <h3>Estado del Tanque</h3>
+                <p id="esttanque">Desconocido</p>
+            </div>
+    
+            <div class="cuadro temperatura">
+                <h3>Temperatura</h3>
+                <p id="temperatura">0°C</p>
+            </div>
+    
+            <div class="cuadro humedad">
                 <h3>Humedad</h3>
-                <p>Humedad actual: <span id="humidity">0</span></p>
+                <p id="humedad">0%</p>
             </div>
         </section>
     
-        <section id="camaras">
-            <h2>Cámaras del Invernadero</h2>
-            <div class="camera-feed">
-                <h3>Cámara 1</h3>
-                <img src="camara1.jpg" alt="Vista de la cámara 1">
-            </div>
-            <div class="camera-feed">
-                <h3>Cámara 2</h3>
-                <img src="camara2.jpg" alt="Vista de la cámara 2">
-            </div>
-        </section>
+        <div class="reloj">
+            <h3>Hora Local</h3>
+            <p id="hora">00:00</p>
+        </div>
     </main>
     
+
+    <script src="../JS/dato.js"></script>
 </body>
 </html>

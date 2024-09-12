@@ -16,10 +16,99 @@
             <ul>
                 <li><a href="../index.html">Pagina Principal</a></li>
                 <li><a href="informacion.html">Mas informacion</a></li>
-                <li><a href="datos.html">Datos de control</a></li>
+                <li><a href="datos.html">Consola</a></li>
             </ul>
         </nav>
     </header>
+    <main>
+        <section id="main-board">
+            <h1>Placa Principal</h1>
+            <div class="carousel-container">
+                <div class="carousel" id="carousel-1">
+                    <img src="../img/imgpp1.jpg" alt="Img1">
+                    <img src="../img/imgpp2.jpg" alt="Img2">
+                    <img src="../img/imgpp3.jpg" alt="Img3">
+                    <img src="../img/imgpp4.jpg" alt="Img4">
+                    <img src="../img/imgpp5.jpg" alt="Img5">
+                    <img src="../img/imgpp6.jpg" alt="Img6">
+                    <img src="../img/imgpp7.jpg" alt="Img7">
+                    <img src="../img/imgpp8.jpg" alt="Img8">
+                </div>
+                <button class="prev" onclick="moveSlide(-1, 'carousel-1')">&#10094;</button>
+                <button class="next" onclick="moveSlide(1, 'carousel-1')">&#10095;</button>
+            </div>
     
+            <div class="board-details">
+                <div class="board-description">
+                    <h2>Placa Principal</h2>                    
+                    <p>Esta usa como unidad de procesamiento el ESP32, encargada de conectar todos los componentes entre sí. Maneja principalmente las luces LED de crecimiento, módulos relé del cooler, módulo relé de la bomba de agua, sensor de humedad, sensor del nivel del agua y la activación de la bomba de agua, entre otros.</p>
+                </div>
+                <div class="board-images">
+                    <img src="../img/Esquemapp.PNG" alt="Placa Principal">
+                </div>
+            </div>
+    
+            <div class="pcb-design">
+                <h3>Diseño PCB</h3>
+                <img src="../img/pcb1p.PNG" alt="Diseño PCB Vista 1">
+                <img src="../img/pcb2p.PNG" alt="Diseño PCB Vista 2">
+                <h3>Vista 3D</h3>
+                <img src="../img/3d1p.PNG" alt="Vista 3D PCB">
+                <img src="../img/3d2p.PNG" alt="Vista 3D PCB">
+            </div>
+        </section>
+        
+        <section id="water-level-sensor-board">
+            <h1>Placa Sensor de Nivel de Agua</h1>
+            <div class="carousel-container">
+                <div class="carousel" id="carousel-2">
+                    <img src="../img/imgagua1.jpg" alt="Img1">
+                    <img src="../img/imgagua2.jpg" alt="Img2">
+                    <img src="../img/imgagua3.jpg" alt="Img3">
+                    <img src="../img/imgagua4.jpg" alt="Img4">
+                    <img src="../img/imgagua5.jpg" alt="Img5">
+                    <img src="../img/imgagua6.jpg" alt="Img6">
+                    <img src="../img/imgagua7.jpg" alt="Img7">
+                    <img src="../img/imgagua8.jpg" alt="Img8">
+                </div>
+                <button class="prev" onclick="moveSlide(-1, 'carousel-2')">&#10094;</button>
+                <button class="next" onclick="moveSlide(1, 'carousel-2')">&#10095;</button>
+            </div>
+    
+            <div class="board-details">
+                <div class="board-description">
+                    <h2>Placa Sensor de Nivel de Agua</h2>
+                    <p>El objetivo de esta placa es detectar el nivel de agua de un tanque y activar una bomba según la humedad del suelo. Usa dos integrados: el CD4049, que invierte las señales de los sensores en el tanque para evitar la electrólisis, y el ULN2803, un array de transistores Darlington que amplifica las señales y controla los LEDs que indican el nivel del agua.</p>
+                    <p>Cuando el agua toca un tornillo sensor, el CD4049 invierte la señal y la envía al ULN2803, que activa el LED correspondiente. El estado de los LEDs indica al ESP32 cuándo activar la bomba.</p>
+                </div>
+                <div class="board-images">
+                    <img src="../img/EsquemaA.PNG" alt="Esquema Placa Sensor de Nivel de Agua">
+                </div>
+            </div>
+    
+            <div class="pcb-design">
+                <h3>Diseño PCB</h3>
+                <img src="../img/pcb1A.PNG" alt="Diseño PCB Lado Cobre">
+                <img src="../img/pcb2p.PNG" alt="Diseño PCB Lado Componentes">
+                <h3>Vista 3D</h3>
+                <img src="../img/3d1A.PNG" alt="Vista 3D PCB Sensor Nivel de Agua">
+                <img src="../img/3d2A.PNG" alt="Vista 3D PCB Sensor Nivel de Agua">
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="iconos">
+            <p id="a1">Seguinos en:<p></p>
+           <ul class="listaiconos">
+            <li><a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram-alt' style='color:#b905a4'  ></i></a></li>
+            <li><a href="https://twitter.com/?lang=es" target="_blank"><i class='bx bxl-twitter' style='color:#1cece3'  ></i></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook-square' style='color:#0a1ad8'  ></i></a></li>
+           </ul>
+        </div>
+        <p id="a2">&copy; 2024 Proyecto Invernadero. Todos los derechos reservados.</p>
+    </footer>    
 </body>
+
+<script src="../JS/informacion.js"></script>
 </html>

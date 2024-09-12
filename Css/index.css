@@ -77,31 +77,174 @@ nav a:hover {
 
 #QS1 {
     background-color: green;
-    padding: 20px; /* Espacio interior para separar del borde */
-    display: flex; /* Para alinear elementos en fila */
-    justify-content: space-between; /* Para separar la imagen del texto */
-    align-items: center; /* Para centrar verticalmente */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#QS1 {
+    background-color: green;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #QS1 .content {
-    max-width: 50%; /* Limitar el ancho máximo del contenido */
+    max-width: 50%;
 }
 
 #QS1 img {
-    margin-right: 20px; /* Margen derecho para separar la imagen del texto */
-    max-width: 800px; /* Limitar el ancho máximo al 100% del contenedor */
-    height: 500px; /* Ajustar la altura automáticamente según el ancho */    
+    margin-right: 20px;
+    max-width: 800px;
+    height: 500px;
 }
 
 #QS1 h1, #QS1 h2 {
-    color: white; /* Color del texto blanco */
+    color: white;
 }
-#QS1 h1{
+
+#QS1 h1 {
     font-size: 50px;
     padding-bottom: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+#QS1 button {
+    padding: 12px 24px;
+    font-size: 1em;
+    color: white;
+    background-color: #225f22;
+    border: black 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+#QS1 button:hover {
+    background-color: #0056b3;
+}
+
+#QS2 {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #f0f8ff;
+}
+
+#QS2 .content, #QS2 div {
+    width: 45%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#QS2 .content h1, #QS2 div h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+
+#QS2 .content h2, #QS2 div h2 {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+#QS2 .content {
+    text-align: left;
+}
+
+#QS2 div {
+    text-align: right;
+}
+
+#QS3 {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: gray;
+}
+#QS3 h1 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#QS3 div {
+    text-align: center;
+    width: 20%;
+}
+
+#QS3 img {
+    width: 152px;
+    height: 152px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 5px solid green; 
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#QS3 h1 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0 0;
+}
+#QS4 {
+    margin-top: 40px;
+    background-color: #5a5656;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#QS4 img {
+    max-width: 500px;
+    height: auto;
+    margin-right: 20px;
+}
+
+#QS4 div {
+    max-width: 50%;
+    text-align: left;
+}
+
+#QS4 h1 {
+    font-size: 50px;
+    padding-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+#QS4 h2 {
+    color: white;
+}
+
+#QS4 button {
+    margin-top: 10px;
+    padding: 12px 24px;
+    font-size: 1em;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#QS4 button:hover {
+    background-color: #0056b3;
+}
 footer {
     background-image: url(../img/Footer.jpg);
     background-size: 165px;
