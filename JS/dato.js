@@ -1,15 +1,15 @@
 function obtenerDatos() {
-    fetch('http://192.168.1.40/datos')  // IP del esp32
+    fetch('http://192.168.1.41/datos')  // IP del esp32
         .then(response => response.json())
         .then(data => {
-            document.getElementById('est32').textContent = data.esp32Connected ? "Conectada" : "Desconectada";
-            document.getElementById('estluces').textContent = data.growLightsOn ? "Prendidas" : "Apagadas";
-            document.getElementById('hora').textContent = data.localTime;
-            document.getElementById('esttanque').textContent = data.waterTankFull ? "Tanque lleno" : "Falta agua";
-            document.getElementById('temperatura').textContent = data.temp;
-            document.getElementById('humedad').textContent = data.humidity;
+            document.getElementById('est32').textContent = data.est32;
+            document.getElementById('estluces').textContent = data.estluces ? "Prendidas" : "Apagadas";
+            document.getElementById('hora').textContent = data.hora;
+            document.getElementById('esttanque').textContent = data.esttanque ? "Tanque lleno" : "Falta agua";
+            document.getElementById('temperatura').textContent = data.temperatura + "C°";
+            document.getElementById('humedad').textContent = data.humedad + "%";
         })
         .catch(error => console.log('Error:', error));
 }
 
-setInterval(obtenerDatos, 2000); 
+setInterval(obtenerDatos, 1000); 

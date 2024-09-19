@@ -1,29 +1,26 @@
-// Función para mover el carrusel manualmente
+
 function moveSlide(direction, carouselId) {
     const carousel = document.getElementById(carouselId);
     const images = carousel.querySelectorAll('img');
     const currentTransform = getComputedStyle(carousel).transform;
     const matrix = new WebKitCSSMatrix(currentTransform);
-    const currentX = matrix.m41; // posición X actual del carrusel
+    const currentX = matrix.m41;
 
-    const width = carousel.clientWidth; // ancho de una imagen
-    const totalWidth = width * images.length; // ancho total del carrusel
+    const width = carousel.clientWidth;
+    const totalWidth = width * images.length;
 
-    // Calculamos la nueva posición en función de la dirección
     let newX = currentX - direction * width;
 
-    // Evitamos que el carrusel se desplace fuera de los límites
     if (newX > 0) {
-        newX = -(totalWidth - width); // Regresar al final si se pasa del principio
+        newX = -(totalWidth - width); 
     } else if (newX < -(totalWidth - width)) {
-        newX = 0; // Regresar al principio si se pasa del final
+        newX = 0;
     }
 
-    // Mueve el carrusel al nuevo valor
     carousel.style.transform = `translateX(${newX}px)`;
 }
 
-// Función para mover automáticamente el carrusel
+
 function autoMove(carouselId) {
     const carousel = document.getElementById(carouselId);
     const images = carousel.querySelectorAll('img');
@@ -31,16 +28,15 @@ function autoMove(carouselId) {
 
     setInterval(() => {
         const width = carousel.clientWidth;
-        currentIndex = (currentIndex + 1) % images.length; // Cicla a la siguiente imagen
+        currentIndex = (currentIndex + 1) % images.length;
         const newX = -currentIndex * width;
 
-        // Mueve el carrusel al nuevo valor
+       
         carousel.style.transform = `translateX(${newX}px)`;
-    }, 2000); // 3000 ms = 3 segundos
+    }, 2000); 
 }
 
-// Iniciar movimiento automático de ambos carruseles
 document.addEventListener('DOMContentLoaded', function () {
-    autoMove('carousel-1');  // Carrusel 1
-    autoMove('carousel-2');  // Carrusel 2
+    autoMove('carousel-1');  
+    autoMove('carousel-2'); 
 });
