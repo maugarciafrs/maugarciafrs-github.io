@@ -6,7 +6,8 @@
 }
 
 body {
-    background-color: #f0f8ff;
+    background-image: url(../img/fondoinfo2.avif);
+
     color: #333;
 }
 #EPimg {
@@ -71,19 +72,135 @@ p {
     color: #555;
 }
 
+.container {
+    max-width: 1000px; /* Ancho máximo del contenedor */
+    margin: 1px auto; /* Centrar el contenedor en la página */
+    text-align: center; /* Centrar el texto */
+    
+}
+
+#pdf-title {
+    font-size: 50px;
+    color: #2c6d2d; /* Color del título */
+    margin-bottom: 20px; /* Espaciado debajo del título */
+}
+
+.pdf-container {
+    height: 90vh; /* Altura del contenedor */
+    overflow: hidden; /* Ocultar el desbordamiento */
+    border: #2c6d2d 100px;
+}
+
+iframe {
+    width: 50%; /* Ancho completo del contenedor */
+    height: 80%; /* Altura completa del contenedor */
+    border-color: #2c6d2d; /* Sin borde */
+    border-radius: 20px;
+    border-width: 10px;
+}
+#fullscreen-button {
+    display: inline-block; /* Para que el enlace se comporte como un botón */
+    background-color: #4CAF50; /* Verde */
+    color: white; /* Texto blanco */
+    padding: 10px 20px; /* Espaciado */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+#fullscreen-button:hover {
+    background-color: #45a049; /* Verde más oscuro al pasar el mouse */
+}
+
+.info-section {
+    background-color: #4CAF50; /* Fondo verde */
+    color: white; /* Texto blanco */
+    padding: 20px; /* Espaciado interno */
+    width: 100%; /* Ancho completo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+.info-section h2 {
+    margin-bottom: 10px; /* Espaciado debajo del título */
+}
+
+.info-section p {
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+  
+#invernaderop{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #2c6d2d;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+#textinp {
+    color: white;
+    font-size: 40px;
+}
+#textinv {
+    color: white;
+    align-items: center;
+    margin: 35px;
+    font-size: 20px;
+}
+#imageinv {
+    width: 25%;
+    margin: 100px;
+}
+#funciones1{
+    display: flex;
+    margin: 60px;
+}
+#imagef1{
+    margin-top: 20px;
+    width: 350px;
+    padding-left: 100px;
+}
+#imagef2{
+    margin-top: 20px ;
+    width: 300px;
+    padding-left: 150px;
+}
+.funcion1 {
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+
+}
+.riegopp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#riegotext{
+    text-align: center;
+}
+#riegoimg {
+padding-left: 380px;
+width: 800px;
+}
 #main-board, #water-level-sensor-board {
     background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 40px 80px rgba(0, 0, 0, 0.1);
     margin: 40px auto;
     padding: 20px;
     max-width: 1200px;
 }
-
+ 
 .carousel-container {
     position: relative;
-    max-width: 70%; 
-    height: 800px;
+    max-width: 30%; 
+    height: 300px;
     margin: auto;
     overflow: hidden;
     border-radius: 10px;
@@ -119,6 +236,9 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+.tit1 {
+    margin-bottom: 30px;
+}
 .prev {
     left: 0;
 }
@@ -153,15 +273,41 @@ button:hover {
 }
 
 .pcb-design img {
-    width: 48%;
+    width: 38%;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 30px;
 }
 .pcb-design h2, .pcb-design h3 {
     width: 100%;
     margin-bottom: 15px;
 }
+#gabinete {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-left: 20px;
+}
+#partes {
+    margin-top:30px ;
+    color: white;
+    font-size: 30px;
+}
+.pgab {
+    margin-top: 10px;
+}
+#imgg{
+    width: 50%; /* Reduce la imagen al 50% de su tamaño original */
 
+}
+.gabimg {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente */
+    padding:30px;
+}
 footer {
     background-image: url(../img/Footer.jpg);
     background-size: 165px;

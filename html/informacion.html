@@ -21,94 +21,173 @@
         </nav>
     </header>
     <main>
-        <section id="main-board">
-            <h1>Placa Principal</h1>
-            <div class="carousel-container">
-                <div class="carousel" id="carousel-1">
-                    <img src="../img/imgpp1.jpg" alt="Img1">
-                    <img src="../img/imgpp2.jpg" alt="Img2">
-                    <img src="../img/imgpp3.jpg" alt="Img3">
-                    <img src="../img/imgpp4.jpg" alt="Img4">
-                    <img src="../img/imgpp5.jpg" alt="Img5">
-                    <img src="../img/imgpp6.jpg" alt="Img6">
-                    <img src="../img/imgpp7.jpg" alt="Img7">
-                    <img src="../img/imgpp8.jpg" alt="Img8">
+        <section id="main-board" class="Informe">
+            <div class="container">
+                <h2 id="pdf-title">Informe Ecoparadise</h2>
+                <div class="pdf-container">
+                    <iframe src="../docs/InformeEcoP.pdf" title="Visualizador PDF"></iframe>
                 </div>
-                <button class="prev" onclick="moveSlide(-1, 'carousel-1')">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 'carousel-1')">&#10095;</button>
             </div>
+            <div>
+                <p>Ver Informe en pantalla completa:</p>
+                <a href="https://drive.google.com/file/d/1fF6HazqNdkMGCM7tLq09yrWX3tX35Rzf/view?usp=sharing" id="fullscreen-button" target="_blank">Ver Informe</a>
+            </div>
+        </section>
+        
+        <div class="info-section">
+            <h2>Informe: Resumen Destacado</h2>
+            <p>Esta sección presenta una síntesis de los aspectos más relevantes del informe, facilitando la comprensión de los puntos clave del proyecto. A través de un formato claro y conciso, el "Resumen Destacado" ofrece una visión general de los objetivos, tecnologías empleadas, resultados obtenidos y futuros pasos del proyecto Eco Paradise. Su propósito es permitir al lector captar rápidamente la esencia del informe, resaltando la información más crítica y las implicaciones de los hallazgos.</p>
+        </div>
+        <section id="main-board">
+            <h1>Funciones pricipales del invernadero EcoParadise</h1>
+            <div id="invernaderop">
+                <div>
+                <p id="textinp">¿Que hace?</p>    
+                <p id="textinv">Eco Paradise es un sistema inteligente diseñado para optimizar el cultivo de plantas en invernaderos, asegurando condiciones óptimas para su crecimiento. Este proyecto integra múltiples tecnologías para crear un ambiente controlado que responde a las necesidades de las plantas.</p>
+            </div>
+                <img src="../img/inveco.png" alt="" id="imageinv">
+            </div>
+            <div id ="funciones1"> 
+            <div class="funcion1">
+                <h2 class="riegopp">Iluminación</h2>
+                <p class="riegopp">El sistema cuenta con un módulo de iluminación que simula la luz solar, utilizando un espectro específico para favorecer la fotosíntesis.</p>
+                <img src="../img/luzcrecimiento.avif" alt="" id="imagef1">
+            </div>
+            <div class="funcion1">
+                <h2 class="riegopp">Ventilación</h2>
+                <p class="riegopp">Tiene un sistema de ventilación que ajusta la temperatura y la humedad, garantizando un clima adecuado para el desarrollo de las plantas.</p>
+                <img src="../img/aire.png" alt="" id="imagef2">
+            </div>
+            </div>
+            <div id="riego">
+                <div>
+                <h2 class="riegopp">Riego automatico</h2>
+                <p id = "riegotext">Para el riego, Eco Paradise emplea sensores de humedad del suelo que activan automáticamente la bomba de agua cuando es necesario, asegurando que las plantas reciban la hidratación adecuada sin desperdiciar recursos. Este sistema también incluye notificaciones al usuario, alertando sobre el estado del invernadero y asegurando un monitoreo constante de las condiciones internas.</p>
+                <img src="../img/aguariego.png" alt="" id="riegoimg"></div>
+            </div>
+
+        </section>
+                           
+        <section id="main-board" >
+            <h1 class="tit1">Placa Principal</h1>
     
             <div class="board-details">
-                <div class="board-description">
-                    <h2>Placa Principal</h2>                    
+                <div class="board-description">                 
                     <p>Esta usa como unidad de procesamiento el ESP32, encargada de conectar todos los componentes entre sí. Maneja principalmente las luces LED de crecimiento, módulos relé del cooler, módulo relé de la bomba de agua, sensor de humedad, sensor del nivel del agua y la activación de la bomba de agua, entre otros.</p>
                 </div>
-                <div class="board-images">
-                    <img src="../img/Esquemapp.PNG" alt="Placa Principal">
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel-1">
+                        <img src="../img/imgpp1.jpg" alt="Img1">
+                        <img src="../img/imgpp2.jpg" alt="Img2">
+                        <img src="../img/imgpp3.jpg" alt="Img3">
+                        <img src="../img/imgpp4.jpg" alt="Img4">
+                        <img src="../img/imgpp5.jpg" alt="Img5">
+                        <img src="../img/imgpp6.jpg" alt="Img6">
+                        <img src="../img/imgpp7.jpg" alt="Img7">
+                        <img src="../img/imgpp8.jpg" alt="Img8">
+                    </div>
+                    <button class="prev" onclick="moveSlide(-1, 'carousel-1')">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1, 'carousel-1')">&#10095;</button>
                 </div>
             </div>
     
             <div class="pcb-design">
+                <h3>Esquema Electrico</h3>
+                <img src="../img/Esquemapp.PNG" alt="Placa principal" id="imgg">
                 <h3>Diseño PCB</h3>
-                <img src="../img/pcb1p.PNG" alt="Diseño PCB Vista 1">
-                <img src="../img/pcb2p.PNG" alt="Diseño PCB Vista 2">
+                <img src="../img/pcb1p.PNG" alt="Diseño PCB Vista 1"class="imgg">
+                <img src="../img/pcb2p.PNG" alt="Diseño PCB Vista 2" class="imgg">
                 <h3>Vista 3D</h3>
-                <img src="../img/3d1p.PNG" alt="Vista 3D PCB">
-                <img src="../img/3d2p.PNG" alt="Vista 3D PCB">
+                <img src="../img/3d1p.PNG" alt="Vista 3D PCB"class="imgg">
+                <img src="../img/3d2p.PNG" alt="Vista 3D PCB"class="imgg">
             </div>
         </section>
         
         <section id="water-level-sensor-board">
-            <h1>Placa Sensor de Nivel de Agua</h1>
-            <div class="carousel-container">
-                <div class="carousel" id="carousel-2">
-                    <img src="../img/imgagua1.jpg" alt="Img1">
-                    <img src="../img/imgagua2.jpg" alt="Img2">
-                    <img src="../img/imgagua3.jpg" alt="Img3">
-                    <img src="../img/imgagua4.jpg" alt="Img4">
-                    <img src="../img/imgagua5.jpg" alt="Img5">
-                    <img src="../img/imgagua6.jpg" alt="Img6">
-                    <img src="../img/imgagua7.jpg" alt="Img7">
-                    <img src="../img/imgagua8.jpg" alt="Img8">
-                </div>
-                <button class="prev" onclick="moveSlide(-1, 'carousel-2')">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 'carousel-2')">&#10095;</button>
-            </div>
+            <h1 class="tit1">Placa Sensor de Nivel de Agua</h1>
     
             <div class="board-details">
                 <div class="board-description">
-                    <h2>Placa Sensor de Nivel de Agua</h2>
                     <p>El objetivo de esta placa es detectar el nivel de agua de un tanque y activar una bomba según la humedad del suelo. Usa dos integrados: el CD4049, que invierte las señales de los sensores en el tanque para evitar la electrólisis, y el ULN2803, un array de transistores Darlington que amplifica las señales y controla los LEDs que indican el nivel del agua.</p>
                     <p>Cuando el agua toca un tornillo sensor, el CD4049 invierte la señal y la envía al ULN2803, que activa el LED correspondiente. El estado de los LEDs indica al ESP32 cuándo activar la bomba.</p>
                 </div>
-                <div class="board-images">
-                    <img src="../img/EsquemaA.PNG" alt="Esquema Placa Sensor de Nivel de Agua">
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel-2">
+                        <img src="../img/imgagua1.jpg" alt="Img1">
+                        <img src="../img/imgagua2.jpg" alt="Img2">
+                        <img src="../img/imgagua3.jpg" alt="Img3">
+                        <img src="../img/imgagua4.jpg" alt="Img4">
+                        <img src="../img/imgagua5.jpg" alt="Img5">
+                        <img src="../img/imgagua6.jpg" alt="Img6">
+                        <img src="../img/imgagua7.jpg" alt="Img7">
+                        <img src="../img/imgagua8.jpg" alt="Img8">
+                    </div>
+                    <button class="prev" onclick="moveSlide(-1, 'carousel-2')">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1, 'carousel-2')">&#10095;</button>
                 </div>
             </div>
     
             <div class="pcb-design">
+                <h3>Esquema Electrico</h3>
+                <img src="../img/EsquemaA.PNG" alt="placa nivel del agua"id="imgg">
                 <h3>Diseño PCB</h3>
-                <img src="../img/pcb1A.PNG" alt="Diseño PCB Lado Cobre">
-                <img src="../img/pcb2p.PNG" alt="Diseño PCB Lado Componentes">
+                <img src="../img/pcb1A.PNG" alt="Diseño PCB Lado Cobre"class="imgg">
+                <img src="../img/pcb2p.PNG" alt="Diseño PCB Lado Componentes"class="imgg">
                 <h3>Vista 3D</h3>
-                <img src="../img/3d1A.PNG" alt="Vista 3D PCB Sensor Nivel de Agua">
-                <img src="../img/3d2A.PNG" alt="Vista 3D PCB Sensor Nivel de Agua">
+                <img src="../img/3d1A.PNG" alt="Vista 3D PCB Sensor Nivel de Agua"class="imgg">
+                <img src="../img/3d2A.PNG" alt="Vista 3D PCB Sensor Nivel de Agua" class="imgg">
             </div>
+        </section>
+
+        <section id="main-board">
+            <h1>Esquema de mecanizado del ganinete</h1>
+            <div id="gabinete">
+                <img src="../img/GabineteP.PNG" alt="" >
+                <p>Este gabinete protegerá las placas principales, incluidas la placa principal y la placa del sensor de nivel de agua, garantizando su seguridad frente a daños externos. Además, permitirá una conexión segura y eficiente de los componentes, sin comprometer la integridad del sistema ni exponerlo a riesgos ambientales.</p>
+            </div>
+            <h1 class="info-section" id="partes">Partes</h1>
+            <div class="gabimg">
+                <img src="../img/latizquierdo.PNG" alt="lateral izquierdo" class="gabimg">
+                <p class="pgab">GABINETE PARTE LATERAL IZQUIERDO: En esta pieza se hicieron 2 agujeros rectangulares, el de arriba es para conectar los cables de las señales del tanque del agua y el de abajo es para conectar las matrices RGB con su respectiva alimentación.</p>
+            </div>
+            <div class="gabimg">
+                <p class="pgab">GABINETE LATERAL DERECHO:  Para hacer esta pieza se usó la herramienta de simetría para duplicar el lateral izquierdo y no tener que hacer otro boceto.</p>
+                <img src="../img/latderecho.PNG" alt="lateral derecho" class="gabimg">
+            </div>
+            <div class="gabimg">
+                <img src="../img/latfrontal.PNG" alt="lateral frontal" class="gabimg">
+                <p class="pgab">GABINETE PARTE FRONTAL: En esta pieza se hizo un agujero rectangular para poder alimentar a la placa principal(que también alimenta a la placa de control de nivel de agua) mediante un cable micro usb B, usando un cargador de celular de 5V 2A.</p>
+            
+            </div >
+            <div class="gabimg">
+                <p class="pgab">GABINETE, PLATAFORMAS PARA LAS PLACAS: Entre la parte trasera y delantera se pusieron 2 plataformas para poder anclar las placas. La superior es para la placa del control de nivel del agua y la de abajo es para la placa principal.</p>
+                <img src="../img/latplataforma.PNG" alt="plataforma de placas" class="gabimg">
+            </div>
+            <div class="gabimg">
+                <img src="../img/lattapas.PNG" alt="tapa" class="gabimg">
+                <p class="pgab">GABINETE, TAPA:  Se hizo esta pieza para poder dar protección a la placa en la parte superior, además se le hizo un agujero rectangular para que se puedan ver los leds indicadoras del nivel del agua.</p>
+            </div>  
+            <div class="gabimg">
+                <p class="pgab">Para la unión entre las 4 piezas(delantera, trasera, lateral izquierda y lateral derecho) se hizo el diseño de unos soportes y luego se lo imprimió 4 veces con la impresora 3D, para las esquinas.</p>
+                <img src="../img/latpiezas.PNG" alt="union" class="gabimg">
+            </div>
+
         </section>
         
     </main>
     <footer>
         <div class="iconos">
-            <p id="a1">Seguinos en:<p></p>
-           <ul class="listaiconos">
-            <li><a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram-alt' style='color:#b905a4'  ></i></a></li>
-            <li><a href="https://twitter.com/?lang=es" target="_blank"><i class='bx bxl-twitter' style='color:#1cece3'  ></i></a></li>
-            <li><a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook-square' style='color:#0a1ad8'  ></i></a></li>
-           </ul>
+            <p id="a1">Seguinos en:</p>
+            <ul class="listaiconos">
+                <li><a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram-alt' style='color:#b905a4'></i></a></li>
+                <li><a href="https://twitter.com/?lang=es" target="_blank"><i class='bx bxl-twitter' style='color:#1cece3'></i></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook-square' style='color:#0a1ad8'></i></a></li>
+            </ul>
         </div>
         <p id="a2">&copy; 2024 Proyecto Invernadero. Todos los derechos reservados.</p>
     </footer>    
-</body>
 
-<script src="../JS/informacion.js"></script>
+    <!-- Script para manejar la ventana modal -->
+    <script src="../JS/informacion.js"></script>
+</body>
 </html>

@@ -1,5 +1,5 @@
 function obtenerDatos() {
-    fetch('http://192.168.1.41/datos')  // IP del esp32
+    fetch('http://192.168.1.40/datos')  // IP del esp32
         .then(response => response.json())
         .then(data => {
             document.getElementById('est32').textContent = data.est32;
@@ -12,4 +12,4 @@ function obtenerDatos() {
         .catch(error => console.log('Error:', error));
 }
 
-setInterval(obtenerDatos, 1000); 
+setInterval(obtenerDatos, 2000); 
