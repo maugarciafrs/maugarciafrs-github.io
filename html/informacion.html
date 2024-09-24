@@ -10,7 +10,7 @@
 <body>
     <header>
         <div>
-            <a href="../index.html" id="EPimg"><img src="../img/IconoP.jpg" id="logo"></a>
+            <a href="../index.html" id="EPimg"><img src="../img/IconoP.png" id="logo"></a>
         </div>
         <nav>
             <ul>
@@ -143,7 +143,7 @@
             <h1>Esquema de mecanizado del ganinete</h1>
             <div id="gabinete">
                 <img src="../img/GabineteP.PNG" alt="" >
-                <p>Este gabinete protegerá las placas principales, incluidas la placa principal y la placa del sensor de nivel de agua, garantizando su seguridad frente a daños externos. Además, permitirá una conexión segura y eficiente de los componentes, sin comprometer la integridad del sistema ni exponerlo a riesgos ambientales.</p>
+                <p id="mecanizadop">Este gabinete protegerá las placas principales, incluidas la placa principal y la placa del sensor de nivel de agua, garantizando su seguridad frente a daños externos. Además, permitirá una conexión segura y eficiente de los componentes, sin comprometer la integridad del sistema ni exponerlo a riesgos ambientales.</p>
             </div>
             <h1 class="info-section" id="partes">Partes</h1>
             <div class="gabimg">
@@ -171,23 +171,206 @@
                 <p class="pgab">Para la unión entre las 4 piezas(delantera, trasera, lateral izquierda y lateral derecho) se hizo el diseño de unos soportes y luego se lo imprimió 4 veces con la impresora 3D, para las esquinas.</p>
                 <img src="../img/latpiezas.PNG" alt="union" class="gabimg">
             </div>
+        </section>
+        <section id="main-board">
+        <section id="esquema-cableado">
+            <h1>Esquema de Cableado</h1>
+            <div class="esquema">
+                <div class="imagen-esquema">
+                    <h3>Placa Principal</h3>
+                    <img src="../img/placaprincipal.jpg" alt="Placa Principal" class="img-esquema">
+                </div>
+                <div class="imagen-esquema">
+                    <h3>Placa de Nivel de Agua</h3>
+                    <img src="../img/placaniveldeagua1.png" alt="Placa de Nivel de Agua" class="img-esquema">
+                </div>
+            </div>
+        </section>
+    </section>
+        <section id="main-board">
+            <div class="cost-analysis-container">
+                <h1 class="cost-analysis-title">Análisis de Costos</h1>
+                <table class="cost-analysis-table">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Descripción</th>
+                            <th>Cantidad</th>
+                            <th>P.Unit</th>
+                            <th>Total $ARS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ULN2803-SMD</td>
+                            <td>ULN2803 SMD SOL-18</td>
+                            <td>1</td>
+                            <td>$1528,35</td>
+                            <td>$1528,35</td>
+                        </tr>
+                        <tr>
+                            <td>CD4049</td>
+                            <td>HEX INVERTING BUFFER</td>
+                            <td>1</td>
+                            <td>$1852,54</td>
+                            <td>$1852,54</td>
+                        </tr>
+                        <tr>
+                            <td>ZT16A</td>
+                            <td>ZÓCALO DIL 16</td>
+                            <td>1</td>
+                            <td>$162,04</td>
+                            <td>$162,04</td>
+                        </tr>
+                        <tr>
+                            <td>CR1206-22K</td>
+                            <td>RESISTOR SMD 22K</td>
+                            <td>6</td>
+                            <td>$9,26</td>
+                            <td>$55,57</td>
+                        </tr>
+                        <tr>
+                            <td>CR1206-1K</td>
+                            <td>RESISTOR SMD 1K</td>
+                            <td>16</td>
+                            <td>$9,26</td>
+                            <td>$148,20</td>
+                        </tr>
+                        <tr>
+                            <td>CR1206-10K</td>
+                            <td>RESISTOR SMD 10K</td>
+                            <td>6</td>
+                            <td>$9,26</td>
+                            <td>$55,57</td>
+                        </tr>
+                        <tr>
+                            <td>2N3904</td>
+                            <td>NPN GENERAL PÚRPOSE AMPLIFIER</td>
+                            <td>4</td>
+                            <td>$46,31</td>
+                            <td>$92,62</td>
+                        </tr>
+                        <tr>
+                            <td>XDT-126VP-2P</td>
+                            <td>BORNERA 2 POLOS PASO 5MM 8AMP</td>
+                            <td>8</td>
+                            <td>$157,47</td>
+                            <td>$1259,76</td>
+                        </tr>
+                        <tr>
+                            <td>XDT-126VP-3P</td>
+                            <td>BORNERA 3 POLOS PASO 5MM 8AMP</td>
+                            <td>3</td>
+                            <td>$231,57</td>
+                            <td>$694,71</td>
+                        </tr>
+                        <tr>
+                            <td>FRS10CS10-05V</td>
+                            <td>RELE 1 INVERSOR 5VDC 10ª PARA IMPRESO</td>
+                            <td>2</td>
+                            <td>$1836,44</td>
+                            <td>$3672,88</td>
+                        </tr>
+                        <tr>
+                            <td>L-5G</td>
+                            <td>LED 5mm VERDE DIFUSO</td>
+                            <td>4</td>
+                            <td>$122,29</td>
+                            <td>$489,16</td>
+                        </tr>
+                        <tr>
+                            <td>L-5R</td>
+                            <td>LED 5mm ROJO DIFUSO</td>
+                            <td>4</td>
+                            <td>$73,99</td>
+                            <td>$295,96</td>
+                        </tr>
+                        <tr>
+                            <td>L-5Y</td>
+                            <td>LED 5mm AMARILLO DIFUSO</td>
+                            <td>2</td>
+                            <td>$128,46</td>
+                            <td>$256,91</td>
+                        </tr>
+                        <tr>
+                            <td>LDR-10</td>
+                            <td>LDR 10mm 250mW 300V 600nm</td>
+                            <td>4</td>
+                            <td>$2883,80</td>
+                            <td>$11535,16</td>
+                        </tr>
+                        <tr>
+                            <td>TP1X40</td>
+                            <td>TIRA DE PINES 1x40 MACHO P/IMPRESO</td>
+                            <td>1</td>
+                            <td>$542,60</td>
+                            <td>$542,60</td>
+                        </tr>
+                        <tr>
+                            <td>TPB1X40</td>
+                            <td>TIRA DE PINES 1x40 90° MACHO P/IMPRESO</td>
+                            <td>1</td>
+                            <td>$984,90</td>
+                            <td>$984,90</td>
+                        </tr>
+                        <tr>
+                            <td>PB40S</td>
+                            <td>HEMBRA .1" 40 VIAS RECTO</td>
+                            <td>1</td>
+                            <td>$546.322</td>
+                            <td>$546.322</td>
+                        </tr>
+                        <tr>
+                            <td>CC-211010</td>
+                            <td>PLACA 10x10 VIRGEN S/FAZ FENOLICO</td>
+                            <td>1</td>
+                            <td>$2081,81</td>
+                            <td>$2081,81</td>
+                        </tr>
+                        <tr>
+                            <td>CC-210505</td>
+                            <td>PLACA 5x5 VIRGEN S/FAZ FENOLICO</td>
+                            <td>1</td>
+                            <td>$672,25</td>
+                            <td>$672,25</td>
+                        </tr>
+                        <tr>
+                            <td>FDLL4148</td>
+                            <td>1N4148 SMD MINI MELF (DL-35)</td>
+                            <td>2</td>
+                            <td>$62,35</td>
+                            <td>$124,71</td>
+                        </tr>
+                        <tr>
+                            <td>AR-DHT11 BOARD</td>
+                            <td>SENSOR HUMEDAD Y TEMP C/BOARD</td>
+                            <td>1</td>
+                            <td>$3107,81</td>
+                            <td>$3107,81</td>
+                        </tr>
+                        <tr>
+                            <td>CAPACITIVE-MOISTURE-SENSOR-1</td>
+                            <td>SENSOR DE HUMEDAD DE SUELO CON CONECTOR GRAVITY 3 PINES</td>
+                            <td>1</td>
+                            <td>$3066,06</td>
+                            <td>$3066,06</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p id="total">TOTAL $ARS= $33.225,19. TOTAL U$S= $24,61</p>
+            </div>
 
         </section>
         
     </main>
     <footer>
-        <div class="iconos">
-            <p id="a1">Seguinos en:</p>
-            <ul class="listaiconos">
-                <li><a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram-alt' style='color:#b905a4'></i></a></li>
-                <li><a href="https://twitter.com/?lang=es" target="_blank"><i class='bx bxl-twitter' style='color:#1cece3'></i></a></li>
-                <li><a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook-square' style='color:#0a1ad8'></i></a></li>
-            </ul>
+        <div>
+            <img src="../img/IconoP.png" alt="" id="icono">
         </div>
-        <p id="a2">&copy; 2024 Proyecto Invernadero. Todos los derechos reservados.</p>
-    </footer>    
+        <p>&copy; 2024 Proyecto Invernadero. Todos los derechos reservados.</p>
+    </footer>      
 
-    <!-- Script para manejar la ventana modal -->
+
     <script src="../JS/informacion.js"></script>
 </body>
 </html>

@@ -34,7 +34,7 @@ nav ul {
 }
 
 nav a {
-    color:black;
+    color: white;
     text-decoration: none;
     font-size: 20px;
     padding: 10px 15px;
@@ -143,6 +143,7 @@ iframe {
 #textinp {
     color: white;
     font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 #textinv {
     color: white;
@@ -308,6 +309,86 @@ button:hover {
     align-items: center;      /* Centra verticalmente */
     padding:30px;
 }
+
+/* Estilo para la sección de esquema de cableado */
+#esquema-cableado {
+    margin-top: 40px; /* Margen superior para separar de otras secciones */
+    text-align: center; /* Centra el texto dentro de la sección */
+}
+
+.esquema {
+    display: flex;
+    justify-content: center; /* Centra las imágenes en la sección */
+    gap: 40px; /* Espaciado entre las imágenes */
+    margin-top: 20px; /* Margen superior para las imágenes */
+}
+
+.imagen-esquema {
+    width: 2000px; /* Ancho fijo para las imágenes */
+}
+
+.img-esquema {
+    width: 100%; /* La imagen ocupará el 100% del contenedor */
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+
+.cost-analysis-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.cost-analysis-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.cost-analysis-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cost-analysis-table thead th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+}
+
+.cost-analysis-table tbody td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.cost-analysis-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.cost-analysis-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.cost-analysis-table tbody td:last-child {
+    font-weight: bold;
+}
+#total {
+    font-size: 25px;
+    margin: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+}
+#mecanizadop{
+    margin: 30px;
+}
 footer {
     background-image: url(../img/Footer.jpg);
     background-size: 165px;
@@ -354,31 +435,24 @@ footer {
 #a2{
     color: white;
 }
-footer .iconos {
-    margin-bottom: 10px;
+footer {
+    background-image: url(../img/Footer.jpg);
+    background-size: 165px;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center; /* Centra el contenido del footer */
+    padding: 20px; /* Espaciado interno del footer */
+    margin-top: 40px; /* Margen superior para separar del contenido */
 }
-
-footer .iconos p {
-    margin-bottom: 10px;
+#icono {
+    width: 75px; /* Ajusta el ancho del logo según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
-
-footer .listaiconos {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-footer .listaiconos li a {
-    font-size: 24px;
-    transition: transform 0.3s ease;
-}
-
-footer .listaiconos li a:hover {
-    transform: scale(1.2);
-}
-
 footer p {
     font-size: 0.9em;
     margin-top: 20px;
-}   
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}

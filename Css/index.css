@@ -34,7 +34,7 @@ nav ul {
 }
 
 nav a {
-    color:black;
+    color:white;
     text-decoration: none;
     font-size: 20px;
     padding: 10px 15px;
@@ -245,43 +245,8 @@ nav a:hover {
 #QS4 button:hover {
     background-color: #0056b3;
 }
-footer {
-    background-image: url(../img/Footer.jpg);
-    background-size: 165px;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-}
 
-footer .iconos {
-    margin-bottom: 10px;
-}
 
-footer .iconos p {
-    margin-bottom: 10px;
-}
-
-footer .listaiconos {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-footer .listaiconos li a {
-    font-size: 24px;
-    transition: transform 0.3s ease;
-}
-
-footer .listaiconos li a:hover {
-    transform: scale(1.2);
-}
-
-footer p {
-    font-size: 0.9em;
-    margin-top: 20px;
-}
 
 /* animacion*/
 nav a, footer .listaiconos li a {
@@ -305,4 +270,25 @@ nav a::before, footer .listaiconos li a::before {
 
 nav a:hover::before, footer .listaiconos li a:hover::before {
     transform: translateX(0);
+}
+
+footer {
+    background-image: url(../img/Footer.jpg);
+    background-size: 165px;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center; /* Centra el contenido del footer */
+    padding: 20px; /* Espaciado interno del footer */
+    margin-top: 40px; /* Margen superior para separar del contenido */
+}
+#icono {
+    width: 83px; /* Ajusta el ancho del logo según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+footer p {
+    font-size: 0.9em;
+    margin-top: 20px;
+    color: white;
+
 }
