@@ -28,10 +28,9 @@
                     <iframe src="../docs/InformeEcoP.pdf" title="Visualizador PDF"></iframe>
                 </div>
             </div>
-            <div>
+            <div class="links">
                 <p>Ver Informe en pantalla completa:</p>
                 <a href="https://drive.google.com/file/d/1fF6HazqNdkMGCM7tLq09yrWX3tX35Rzf/view?usp=sharing" id="fullscreen-button" target="_blank">Ver Informe</a>
-            </div>
         </section>
         
         <div class="info-section">
@@ -73,7 +72,7 @@
     
             <div class="board-details">
                 <div class="board-description">                 
-                    <p>Esta usa como unidad de procesamiento el ESP32, encargada de conectar todos los componentes entre sí. Maneja principalmente las luces LED de crecimiento, módulos relé del cooler, módulo relé de la bomba de agua, sensor de humedad, sensor del nivel del agua y la activación de la bomba de agua, entre otros.</p>
+                    <p>La placa principal del proyecto Eco Paradise utiliza un ESP32 para conectar y gestionar los sistemas del invernadero: las luces de crecimiento se activan con iluminación magenta según sensores LDR y un horario; la ventilación se controla con un sensor DHT11 que enciende un ventilador si la temperatura supera 28 °C o la humedad excede 70 °C; el riego activa una bomba cuando la humedad del suelo baja del 40 % y envía un mensaje por Telegram si el tanque está vacío; y el sistema de estado notifica al usuario sobre el funcionamiento del invernadero. Estos sistemas aseguran un control eficiente del invernadero.</p>
                 </div>
                 <div class="carousel-container">
                     <div class="carousel" id="carousel-1">
@@ -93,7 +92,7 @@
     
             <div class="pcb-design">
                 <h3>Esquema Electrico</h3>
-                <img src="../img/Esquemapp.PNG" alt="Placa principal" id="imgg">
+                <a href="https://drive.google.com/file/d/1GmthUdMrAm8x5CL9KUl3vczjTbeBKT8Y/view?usp=sharing" target="_blank" class="pcb-design"><img src="../img/Esquemapp.PNG" alt="Placa principal" id="imgg"></a>
                 <h3>Diseño PCB</h3>
                 <img src="../img/pcb1p.PNG" alt="Diseño PCB Vista 1"class="imgg">
                 <img src="../img/pcb2p.PNG" alt="Diseño PCB Vista 2" class="imgg">
@@ -129,7 +128,7 @@
     
             <div class="pcb-design">
                 <h3>Esquema Electrico</h3>
-                <img src="../img/EsquemaA.PNG" alt="placa nivel del agua"id="imgg">
+                <a href="https://drive.google.com/file/d/1u6HhgAa-4XaDGSxTOrZluj28Preqwh2w/view?usp=sharing" target="_blank" class="pcb-design"><img src="../img/EsquemaA.PNG" alt="placa nivel del agua"id="imgg"></a>
                 <h3>Diseño PCB</h3>
                 <img src="../img/pcb1A.PNG" alt="Diseño PCB Lado Cobre"class="imgg">
                 <img src="../img/pcb2p.PNG" alt="Diseño PCB Lado Componentes"class="imgg">
